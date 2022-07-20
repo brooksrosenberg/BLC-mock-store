@@ -25,9 +25,10 @@ function Header() {
           <span className="header_optionLineTwo">& Orders</span>
         </div>
 
-        <div className="header_navOption">
-          <span className="header_optionLineOne">Cart</span>
+        <div className="header_optionBasket">
+          
           <ShoppingCartIcon className="shoppingCartIcon"></ShoppingCartIcon>
+          <span className="header_optionLineTwo header_basketCount ">0</span>
         </div>
 
         {/* <div className="header_navOption"></div> */}
