@@ -31,7 +31,6 @@ function Header() {
           <span className="header_optionLineTwo header_basketCount ">0</span>
         </div>
 
-        {/* <div className="header_navOption"></div> */}
       </div>
     </div>
   );
