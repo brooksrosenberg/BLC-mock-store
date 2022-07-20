@@ -1,0 +1,23 @@
+{
+  "name": "blc-mock-store",
+  "version": "1.0.0",
+  "description": "Ecommerce store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run server\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brooksrosenberg/BLC-mock-store.git"
+  },
+  "author": "Brooks Rosenberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brooksrosenberg/BLC-mock-store/issues"
+  },
+  "homepage": "https://github.com/brooksrosenberg/BLC-mock-store#readme"
+}
