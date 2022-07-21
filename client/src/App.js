@@ -1,14 +1,18 @@
 import React from "react";
 import './App.css';
-import Header from "./components/Header";
+import AllNav from "./components/nav components/AllNav";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
+      
+      <AllNav />
       {/*header*/}
-      <Header />
-
+      {/* navbar */}
+      
       {/*home*/}
+      <Home />
     </div>
   );
 }

@@ -1,0 +1,29 @@
+.navbar__section{
+    height: 40px;
+    display: flex;
+    align-self: center;
+    background-color: rgb(112, 163, 207);
+    /* position: sticky;
+    top: 60; */
+    z-index: 100;
+}
+.nav__option{
+    display: flex;
+    
+    justify-content:space-evenly;  
+}
+
+.nav__selection{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    padding-top: 12px;
+    justify-content: space-evenly;
+}
+
+.option__line {
+    font-size: 15px;
+}
