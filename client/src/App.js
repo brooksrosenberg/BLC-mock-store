@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import AllNav from "./components/nav components/AllNav";
+import AllNav from "./components/nav_components/AllNav";
 import Home from "./pages/Home";
 
 function App() {

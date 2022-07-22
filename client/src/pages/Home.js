@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Home.css"
 import BannerImg from '../images/home_banner.png'
-import MediaRoutes from '../components/MediaRoutes'
+
+
 
 function Home() {
   return (
@@ -11,14 +12,29 @@ function Home() {
             {/* <p className='home__imageDetails'>gen 2 flies availible</p> */}
         </div>
 
-        <div className='home__row'></div>
-            <MediaRoutes />
+       {/* <div className='home__row'>
+            <div className='home__banner'>
+               <Product 
+               title=
 
-        <div className='home__row'></div>
-            <MediaRoutes />
-            <MediaRoutes/>
-        <div className='home__row'></div>
-            <MediaRoutes />
+            </div>
+        </div> */}
+          {/*<div className='home__row'>
+            <div className='home__banner'>
+            
+            </div>
+        </div>
+        <div className='home__row'>
+            <div className='home__banner'>
+            
+            </div>
+        </div>
+        <div className='home__row'>
+            <div className='home__banner'>
+            
+            </div>
+        </div> */}
+            
     </div>
   )
 }
