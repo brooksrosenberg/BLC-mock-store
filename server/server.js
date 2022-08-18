@@ -5,6 +5,7 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const router = express.Router();
 const path = require("path");
 
+
 // Import the connection object
 const sequelize = require('./config/connection');
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // app.use(router);
 // app.use("/", routes);
+
 // Connect to the database before starting the Express.js server
 app.listen(PORT, () => {
   console.log(`Server is listening at http://localhost:${PORT}`);

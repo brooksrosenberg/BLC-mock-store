@@ -7,32 +7,44 @@ Cart.init(
     {
         user_id: {
             type: DataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey: true,
+            references: {
+                model: "user",
+                key: 'id'
+            },
+            allowNull: false,
         },
-        product_id: {
-            type: DataTypes.STRING
-        },
-        // user_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: "user",
-        //         key: 'id'
-        //     }
-        // },
-        // post_id: {
-        //     type: DataTypes.INTEGER,
-        //     references: {
-        //         model: "post",
-        //         key: 'id'
-        //     }
-        // }
+        cartItems: [{
+            product_id:{ 
+                type: DataTypes.INTEGER,
+                references: {
+                    model: "product",
+                    key: 'id'},
+                unique: true,
+            },
+            title: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                unique: true,
+            },
+            description: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                unique: true,
+            },
+            img: {
+                type: DataTypes.BLOB,
+                allowNull: false,
+            },
+            category: {type: DataTypes.STRING},
+            bio: {type: DataTypes.STRING},
+            price: { type: DataTypes.DECIMAL(10,2)},
+        }],
     },
     {
         sequelize,
-        // underscored: true,
-        // modelName: 'comment',
-        // freezeTableName: true,
+        underscored: true,
+        modelName: 'cart',
+        freezeTableName: true,
     }
 )
 
