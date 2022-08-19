@@ -36,6 +36,7 @@ Cart.init(
                 allowNull: false,
             },
             category: {type: DataTypes.STRING},
+            quantity: {type:DataTypes.NUMBER},
             bio: {type: DataTypes.STRING},
             price: { type: DataTypes.DECIMAL(10,2)},
         }],
